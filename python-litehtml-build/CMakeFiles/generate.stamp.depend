@@ -1,0 +1,25 @@
+# CMake generation dependency list for this directory.
+E:/APP/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake
+E:/APP/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake
+E:/APP/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake
+E:/APP/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake
+E:/APP/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake
+E:/APP/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake
+E:/APP/CMake/share/cmake-3.28/Modules/CMakeRCInformation.cmake
+E:/APP/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake
+E:/APP/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake
+E:/APP/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+E:/APP/CMake/share/cmake-3.28/Modules/Compiler/MSVC-C.cmake
+E:/APP/CMake/share/cmake-3.28/Modules/Compiler/MSVC-CXX.cmake
+E:/APP/CMake/share/cmake-3.28/Modules/Compiler/MSVC.cmake
+E:/APP/CMake/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake
+E:/APP/CMake/share/cmake-3.28/Modules/Platform/Windows-MSVC-C.cmake
+E:/APP/CMake/share/cmake-3.28/Modules/Platform/Windows-MSVC-CXX.cmake
+E:/APP/CMake/share/cmake-3.28/Modules/Platform/Windows-MSVC.cmake
+E:/APP/CMake/share/cmake-3.28/Modules/Platform/Windows.cmake
+E:/APP/CMake/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake
+E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/CMakeFiles/3.28.0-rc5/CMakeCCompiler.cmake
+E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/CMakeFiles/3.28.0-rc5/CMakeCXXCompiler.cmake
+E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/CMakeFiles/3.28.0-rc5/CMakeRCCompiler.cmake
+E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/CMakeFiles/3.28.0-rc5/CMakeSystem.cmake
+E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/CMakeLists.txt
