@@ -10,7 +10,7 @@ python-litehtml仅解析元素的位置,而不会提供具体的渲染功能。�
 ### 通过 python-litehtml实现的PyQt-Html-Widget
 ![img](https://github.com/fingertips-dancer/python-litehtml/blob/main/doc/img/pyqt-html-widget.png)
 
-你可以在 ***eval/qt_eval.py*** 在到它
+你可以在 ***eval/qt_eval.py*** 找到它
 
 
 # 项目依赖
