@@ -1,6 +1,19 @@
 __pycache__
-pybind11
 .idea
-python-litehtml-build/litehtml/
 .idea/
 .vscode/
+
+# in build
+python-litehtml-build/pybind11/
+python-litehtml-build/litehtml/
+python-litehtml-build/Release/
+python-litehtml-build/x64/
+.vcxproj
+.filters
+.cmake
+.sln
+python-litehtml-build/CMakeCache.txt
+
+# save
+!python-litehtml-build/pybind11
+!python-litehtml-build/litehtml
