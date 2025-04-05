@@ -8,7 +8,7 @@ python-litehtml-build/pybind11/*
 !/python-litehtml-build/pybind11/.gitkeep
 python-litehtml-build/litehtml/*
 !/python-litehtml-build/litehtml/.gitkeep
-python-litehtml-build/Release/v
+python-litehtml-build/Release/*
 python-litehtml-build/x64/*
 python-litehtml-build/build/*
 python-litehtml-build/CMakeFiles/*
