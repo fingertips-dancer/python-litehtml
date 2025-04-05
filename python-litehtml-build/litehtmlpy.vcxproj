@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A372FD9C-47A6-3FC3-828B-F97CCEEF55A5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>litehtmlpy</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\src\litehtmlpy\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">litehtmlpy.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">litehtmlpy.cp310-win_amd64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.pyd</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\build\lib.win-amd64-cpython-310\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">litehtmlpy.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">litehtmlpy.cp310-win_amd64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.pyd</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\src\litehtmlpy\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">litehtmlpy.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">litehtmlpy.cp310-win_amd64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.pyd</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\src\litehtmlpy\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">litehtmlpy.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">litehtmlpy.cp310-win_amd64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.pyd</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\include;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src\gumbo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/conda/envs/MOSS/include" /external:I "E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/pybind11/include" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug";litehtmlpy_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";litehtmlpy_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\include;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src\gumbo\include;D:\conda\envs\MOSS\include;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\include;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src\gumbo\include;D:\conda\envs\MOSS\include;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>litehtml\Debug\litehtml.lib;litehtml\src\gumbo\Debug\gumbo.lib;D:\conda\envs\MOSS\libs\python310.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/Debug/litehtmlpy.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/src/litehtmlpy/Debug/litehtmlpy.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\include;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src\gumbo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/conda/envs/MOSS/include" /external:I "E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/pybind11/include" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";litehtmlpy_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";litehtmlpy_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\include;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src\gumbo\include;D:\conda\envs\MOSS\include;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\include;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src\gumbo\include;D:\conda\envs\MOSS\include;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>litehtml\Release\litehtml.lib;litehtml\src\gumbo\Release\gumbo.lib;D:\conda\envs\MOSS\libs\python310.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/Release/litehtmlpy.lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ProgramDataBaseFile>E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/build/lib.win-amd64-cpython-310/litehtmlpy.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\include;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src\gumbo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/conda/envs/MOSS/include" /external:I "E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/pybind11/include" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";litehtmlpy_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";litehtmlpy_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\include;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src\gumbo\include;D:\conda\envs\MOSS\include;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\include;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src\gumbo\include;D:\conda\envs\MOSS\include;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>litehtml\MinSizeRel\litehtml.lib;litehtml\src\gumbo\MinSizeRel\gumbo.lib;D:\conda\envs\MOSS\libs\python310.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/MinSizeRel/litehtmlpy.lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ProgramDataBaseFile>E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/src/litehtmlpy/MinSizeRel/litehtmlpy.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\include;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src\gumbo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/conda/envs/MOSS/include" /external:I "E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/pybind11/include" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";litehtmlpy_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";litehtmlpy_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\include;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src\gumbo\include;D:\conda\envs\MOSS\include;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\include;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src\gumbo\include;D:\conda\envs\MOSS\include;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\pybind11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>litehtml\RelWithDebInfo\litehtml.lib;litehtml\src\gumbo\RelWithDebInfo\gumbo.lib;D:\conda\envs\MOSS\libs\python310.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/RelWithDebInfo/litehtmlpy.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/src/litehtmlpy/RelWithDebInfo/litehtmlpy.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+E:\APP\CMake\bin\cmake.exe -SE:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build -BE:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build --check-stamp-file E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\APP\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeCCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeCXXCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeRCCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+E:\APP\CMake\bin\cmake.exe -SE:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build -BE:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build --check-stamp-file E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\APP\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeCCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeCXXCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeRCCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+E:\APP\CMake\bin\cmake.exe -SE:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build -BE:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build --check-stamp-file E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\APP\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeCCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeCXXCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeRCCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+E:\APP\CMake\bin\cmake.exe -SE:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build -BE:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build --check-stamp-file E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\APP\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeCCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeCXXCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeRCCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\src\litehtmlpy.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\ZERO_CHECK.vcxproj">
+      <Project>{D273D999-2831-3EB0-9611-38328DAC0746}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src\gumbo\gumbo.vcxproj">
+      <Project>{11D4EDB4-22AF-362F-97DD-A1F47E3E80BF}</Project>
+      <Name>gumbo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\litehtml.vcxproj">
+      <Project>{BE92183D-A626-3F0B-8D97-18287AAB1EC5}</Project>
+      <Name>litehtml</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

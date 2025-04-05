@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{05F5C231-C6FC-307B-BAEB-BC63861A1C99}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+E:\APP\CMake\bin\cmake.exe -SE:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build -BE:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build --check-stamp-file E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\APP\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeCCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeCXXCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeRCCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+E:\APP\CMake\bin\cmake.exe -SE:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build -BE:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build --check-stamp-file E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\APP\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeCCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeCXXCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeRCCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+E:\APP\CMake\bin\cmake.exe -SE:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build -BE:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build --check-stamp-file E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\APP\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeCCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeCXXCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeRCCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+E:\APP\CMake\bin\cmake.exe -SE:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build -BE:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build --check-stamp-file E:/study/My-GitHub-Project/QHtmlWidget/python-litehtml-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\APP\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;E:\APP\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;E:\APP\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeCCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeCXXCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeRCCompiler.cmake;E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\3.28.0-rc5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\ZERO_CHECK.vcxproj">
+      <Project>{D273D999-2831-3EB0-9611-38328DAC0746}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\src\gumbo\gumbo.vcxproj">
+      <Project>{11D4EDB4-22AF-362F-97DD-A1F47E3E80BF}</Project>
+      <Name>gumbo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtml\litehtml.vcxproj">
+      <Project>{BE92183D-A626-3F0B-8D97-18287AAB1EC5}</Project>
+      <Name>litehtml</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\study\My-GitHub-Project\QHtmlWidget\python-litehtml-build\litehtmlpy.vcxproj">
+      <Project>{A372FD9C-47A6-3FC3-828B-F97CCEEF55A5}</Project>
+      <Name>litehtmlpy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
