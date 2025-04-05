@@ -1,6 +1,0 @@
-# Options are listed here:
-# https://clang.llvm.org/docs/ClangFormatStyleOptions.html
----
-Standard: c++17
-TabWidth: 4
-UseTab: Always
