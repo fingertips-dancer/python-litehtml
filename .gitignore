@@ -1,4 +1,6 @@
 __pycache__
-.idea
 pybind11
-/python-litehtml-build\litehtml
+.idea
+python-litehtml-build/litehtml/
+.idea/
+.vscode/
