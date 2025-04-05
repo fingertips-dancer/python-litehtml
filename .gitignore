@@ -8,9 +8,16 @@ python-litehtml-build/pybind11/
 python-litehtml-build/litehtml/
 python-litehtml-build/Release/
 python-litehtml-build/x64/
+python-litehtml-build/build/
+python-litehtml-build/CMakeFiles/
+python-litehtml-build/litehtmlpy.dir/
 *.vcxproj
 *.filters
 *.cmake
 *.sln
 python-litehtml-build/CMakeCache.txt
 
+
+# keep
+!/python-litehtml-build/litehtml/.gitkeep
+!/python-litehtml-build/pybind11/.gitkeep
