@@ -8,8 +8,8 @@ from setuptools import Extension, setup, find_packages
 from setuptools.command.build_ext import build_ext
 
 from pybind11 import get_include
-import pybind11
-print(1111111111111, pybind11)
+
+
 # Convert distutils Windows platform specifiers to CMake -A arguments
 PLAT_TO_CMAKE = {
     "win32": "Win32",
