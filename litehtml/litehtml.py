@@ -31,10 +31,10 @@ class document_container(litehtmlpy.document_container):
         assert isinstance(width, int) and isinstance(height, int), ''
         self.__size = (width, height)
 
-    def setPPI(self, ppi: Tuple[int, int]):
+    def setPPI(self, ppi: Tuple[int, int]) -> None:
         self._ppi = ppi
 
-    def setRoot(self, root: str):
+    def setRoot(self, root: str) -> None:
         self.__root = root
 
     def create_font(self,
@@ -55,9 +55,6 @@ class document_container(litehtmlpy.document_container):
         warnings.warn(f'You need to overload this function <create_font>')
         return [self.hfont, 15, 4, 19, 19]
 
-    def delete_font(self, hFont):
-        warnings.warn(f'You need to overload this function <delete_font>')
-
     def load_image(self, src: str, base_url: Union[str, None], redraw_on_ready: bool) -> None:
         """
         load image
@@ -77,18 +74,19 @@ class document_container(litehtmlpy.document_container):
         """
         raise NotImplementedError('You must overload')
 
-    def pt_to_px(self, pt):
+    def pt_to_px(self, pt) -> int:
         logger.debug('pt_to_px(%d)', pt)
         pt = int(pt * self._ppi[1] / 72)
         return pt
 
-    def get_default_font_size(self):
+    def get_default_font_size(self) -> int:
         return 27
 
-    def get_default_font_name(self):
+    # ----- get -----
+    def get_default_font_name(self) -> str:
         return 'Times New Roman'
 
-    def get_client_rect(self, client):
+    def get_client_rect(self, client: lite_type.position) -> None:
         logger.debug('get_client_rect(%s, %s, %s, %s)', client.x, client.y, client.width, client.height)
         client.clear()
         client.width = self.size()[0]
@@ -105,19 +103,19 @@ class document_container(litehtmlpy.document_container):
         warnings.warn(f'You need to overload this function <get_image_size>')
 
     # ------------ draw ------------
-    def draw_text(self, hdc: int, text: int, hFont: int, color: str, pos: lite_type.position):
+    def draw_text(self, hdc: int, text: int, hFont: int, color: str, pos: lite_type.position) -> None:
         warnings.warn(f'You need to overload this function <draw_text>')
 
-    def draw_list_marker(self, hdc: int, marker: lite_type.list_marker):
+    def draw_list_marker(self, hdc: int, marker: lite_type.list_marker) -> None:
         warnings.warn(f'You need to overload this function <draw_list_marker>')
 
-    def draw_image(self, hdc: int, layer: lite_type.background_layer, url: str, base_url: str):
+    def draw_image(self, hdc: int, layer: lite_type.background_layer, url: str, base_url: str) -> None:
         warnings.warn(f'You need to overload this function <draw_image>')
 
-    def draw_solid_fill(self, hdc: int, layer: lite_type.background_layer, color):
+    def draw_solid_fill(self, hdc: int, layer: lite_type.background_layer, color: str) -> None:
         warnings.warn(f'You need to overload this function <draw_solid_fill>')
 
-    def draw_linear_gradient(self, hdc: int, layer: lite_type.background_layer, gradient):
+    def draw_linear_gradient(self, hdc: int, layer: lite_type.background_layer, gradient) -> None:
         warnings.warn(f'You need to overload this function <draw_linear_gradient>')
 
     def draw_radial_gradient(self, hdc: int, layer: lite_type.background_layer, gradient):
@@ -129,23 +127,39 @@ class document_container(litehtmlpy.document_container):
     def draw_borders(self, hdc, borders, draw_pos, root):
         warnings.warn(f'You need to overload this function <draw_borders>')
 
+    #  ----- set -----
     def set_caption(self, caption):
         warnings.warn(f'You need to overload this function <set_caption>')
         # logger.debug('set_caption(%s)', caption)
 
+    def set_base_url(self, base_url):
+        warnings.warn(f'You need to overload this function <set_base_url>')
+
+    def set_cursor(self, cursor):
+        logger.debug('set_cursor(%s)', cursor)
+
+    def set_clip(self, pos, radius):
+        logger.debug('set_clip(%s, %s)', pos, radius)
+        self.clips.push((pos, radius))
+
+    def link(self, doc, el):
+        warnings.warn(f'You need to overload this function <link>')
+
+    # ----- on -----
+    def on_mouse_event(self, el, event):
+        warnings.warn(f'You need to overload this function <on_mouse_event>')
+
+    # ----- del ----
     def del_clip(self):
         logger.debug('del_clip()')
         if self.clips:
             self.clips.pop()
 
-    def set_base_url(self, base_url):
-        warnings.warn(f'You need to overload this function <set_base_url>')
+    def delete_font(self, hFont):
+        warnings.warn(f'You need to overload this function <delete_font>')
 
     def on_mouse_event(self, el, event):
         logger.debug('on_mouse_event(%s, %s)', el, event)
-
-    def set_cursor(self, cursor):
-        logger.debug('set_cursor(%s)', cursor)
 
     def transform_text(self, text, tt):
         logger.debug('transform_text(%s, %d)', text, tt)
@@ -159,12 +173,8 @@ class document_container(litehtmlpy.document_container):
         """
         warnings.warn(f'You need to overload this function <import_css>')
 
-    def set_clip(self, pos, radius):
-        logger.debug('set_clip(%s, %s)', pos, radius)
-        self.clips.push((pos, radius))
-
     def get_media_features(self):
-        logger.debug('get_media_features()')
+        warnings.warn(f'You need to overload this function <get_media_features>')
         return (
             2,  # media_type_screen
             self.size()[0],

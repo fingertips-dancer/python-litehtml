@@ -653,6 +653,12 @@ public:
         if( debuglog ){
             ENTERWRAPPER
         }
+        PYBIND11_OVERRIDE_PURE(
+            void,
+            document_container,
+            link,
+            doc, el
+        );
     }
     void    on_anchor_click(const char* url, const lh::element::ptr& el) override
     {
@@ -707,7 +713,6 @@ public:
         if( debuglog ){
             ENTERWRAPPER
         }
-#if 1
         py::gil_scoped_acquire gil;
         py::function pyfunc = pybind11::get_override(this, "import_css");
         if (pyfunc) {
@@ -716,14 +721,7 @@ public:
                 text = obj.cast<std::string>();
             }
         }
-#else
-        PYBIND11_OVERRIDE_PURE(
-            void,
-            document_container,
-            import_css,
-            text, url, baseurl
-        );
-#endif
+
     }
     void    set_clip(const lh::position& pos, const lh::border_radiuses& bdr_radius) override
     {
@@ -768,7 +766,6 @@ public:
         if( debuglog ){
             ENTERWRAPPER
         }
-#if 1
         py::gil_scoped_acquire gil;
         py::function pyfunc = pybind11::get_override(this, "create_element");
         if (pyfunc) {
@@ -784,14 +781,6 @@ public:
             }
         }
         return nullptr;
-#else
-        PYBIND11_OVERRIDE_PURE(
-            lh::element::ptr,
-            document_container,
-            create_element,
-            tag_name, attributes, doc
-        );
-#endif
     }
     void    get_media_features(lh::media_features& media) const override
     {

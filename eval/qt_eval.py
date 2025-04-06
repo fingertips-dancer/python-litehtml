@@ -4,7 +4,7 @@ from QHtmlWidget import HtmlWidget
 
 from PyQt5.QtWidgets import QApplication
 from PyQt5.QtCore import QUrl
-fname = '../re/demo.html'
+fname = '../rc/demo.html'
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     html = open(fname, 'rt', encoding='utf-8').read()

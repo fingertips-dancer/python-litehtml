@@ -1,5 +1,5 @@
 from . import litehtmlpy
-from typing import Callable, Any
+from typing import Callable, Any, List
 from enum import Enum
 from .lite_enum import list_style_type, background_repeat, background_attachment
 
@@ -59,6 +59,27 @@ class border_radiuses(litehtmlpy.border_radiuses):
     fix_values: Callable[[int, int], None]
 
 
+class background_layer_image(litehtmlpy.background_layer_image):
+    url: str
+    base_url: str
+
+
+class background_layer_color(litehtmlpy.background_layer_color):
+    color: str
+
+
+class background_layer_color_point(litehtmlpy.background_layer_color_point):
+    offset: str
+    color: str
+    hint: str
+
+
+class color_point:
+    offset: float
+    color: str
+    hint: float
+
+
 class background_layer(litehtmlpy.background_layer):
     border_box: position
     border_radius: border_radiuses
@@ -67,3 +88,39 @@ class background_layer(litehtmlpy.background_layer):
     attachment: background_attachment
     repeat: background_repeat
     is_root: bool
+
+    class image:
+        url: str
+        base_url: str
+
+    color_point: color_point
+
+    class color:
+        color: str
+
+    class gradient_base:
+        color_points: List[color_point]
+
+
+class background(litehtmlpy.background):
+    m_image: List
+    # m_baseurl
+    # m_color
+    # m_attachment
+    # m_position_x
+    # m_position_y
+    # m_size
+    # m_repeat
+    # m_clip
+    # m_origin
+
+    is_empty: Callable[[], bool]
+    get_layers_number: Callable[[], int]
+    get_layer: Callable[[int, position, Any, background_layer], bool]
+    get_layer_type: Callable
+    get_image_layer: Callable
+    get_color_layer: Callable
+    get_linear_gradient_layer: Callable
+    get_radial_gradient_layer: Callable
+    get_conic_gradient_layer: Callable
+    draw_layer: Callable[[int, int, background_layer, 'document_container'], None]

@@ -139,3 +139,13 @@ class render_type(LiteEnum):
     render_all: str
     render_no_fixed: str
     render_fixed_only: str
+
+
+class layer_type(LiteEnum):
+    """ enum """
+    type_none: str
+    type_color: str
+    type_image: str
+    type_linear_gradient: str
+    type_radial_gradient: str
+    type_conic_gradient: str
