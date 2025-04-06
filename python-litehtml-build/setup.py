@@ -2,6 +2,7 @@ import os
 import re
 import subprocess
 import sys
+import warnings
 from pathlib import Path
 
 from setuptools import Extension, setup, find_packages
@@ -9,7 +10,7 @@ from setuptools.command.build_ext import build_ext
 
 from pybind11 import get_include
 
-
+OUTPUT_DIR = ''
 # Convert distutils Windows platform specifiers to CMake -A arguments
 PLAT_TO_CMAKE = {
     "win32": "Win32",
@@ -33,6 +34,8 @@ class CMakeBuild(build_ext):
         # Must be in this form due to bug in .resolve() only fixed in Python 3.10+
         ext_fullpath = Path.cwd() / self.get_ext_fullpath(ext.name)  # type: ignore[no-untyped-call]
         extdir = ext_fullpath.parent.resolve()
+        global OUTPUT_DIR
+        OUTPUT_DIR = extdir
 
         # Using this requires trailing slash for auto-detection & inclusion of
         # auxiliary "native" libs
@@ -123,11 +126,12 @@ class CMakeBuild(build_ext):
         subprocess.run(
             ["cmake", "--build", ".", *build_args], check=True
         )
+        print(cmake_args)
 
 
 # The information here can also be placed in setup.cfg - better separation of
 # logic and declaration, and simpler if you include description/version in a file.
-setup(
+r = setup(
     name="litehtmlpy",
     version="0.1.0",
     author="Grzegorz Makarewicz",
@@ -139,8 +143,44 @@ setup(
     ],
     cmdclass={"build_ext": CMakeBuild},
     zip_safe=False,
-#    extras_require={"test": ["pytest>=6.0"]},
+    #    extras_require={"test": ["pytest>=6.0"]},
     python_requires=">=3.7",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
 )
+
+try:
+    from pybind11_stubgen import run, to_output_and_subdir, arg_parser, CLIArgs, Printer, stub_parser_from_args, Writer
+except ImportError:
+    warnings.warn('If you want to auto generate .pyi for litehtml, please install pybind11_stubgen')
+    sys.exit(0)
+except Exception as e:
+    raise e
+
+# prepare
+output_dir = OUTPUT_DIR
+sys.path.insert(0, str(OUTPUT_DIR))
+module_name = 'litehtmlpy'
+stub_extension = 'pyi'
+print_invalid_expressions_as_is = False
+args = arg_parser().parse_args(namespace=CLIArgs())
+parser = stub_parser_from_args(args)
+printer = Printer(invalid_expr_as_ellipses=not print_invalid_expressions_as_is)
+
+out_dir, sub_dir = to_output_and_subdir(
+    output_dir=output_dir,
+    module_name=module_name,
+    root_suffix=None
+)
+
+run(
+    parser,
+    printer,
+    module_name,
+    out_dir,
+    sub_dir=sub_dir,
+    dry_run=args.dry_run,
+    writer=Writer(stub_ext=stub_extension),
+)
+
+

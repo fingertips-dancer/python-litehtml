@@ -2,6 +2,7 @@ __pycache__
 .idea
 .idea/
 .vscode/
+test.py
 
 # in build
 python-litehtml-build/pybind11/*

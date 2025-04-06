@@ -17,9 +17,11 @@ cd ./python-litehtml-build
 python setup.py build
 ```
 
-你会在 ***./python-litehtml-build/bulid*** 中找到构建好的 .pyd 文件。
-如果你希望使用预编写好的python-package，请将构建后的 .pyd文件复制到 ***./litehtml*** 中，并重命名为 **litehtmlpy.pyd**
+你会在 ***./python-litehtml-build/bulid*** 中找到构建好的 **.pyd** 文件。
 
+如果已安装 [pybind11-stubgen](https://github.com/sizmailov/pybind11-stubgen) 程序会试图生成对应的 **.pyi**。(由 [pybind11-stubgen](https://github.com/sizmailov/pybind11-stubgen) 生成的 **.pyi** 可靠性还未验证)
+
+如果你希望使用预编写好的python-package，请将构建后的 **.pyd**(**.pyi**) 文件复制到 ***./litehtml*** 中
 ## 正在施工！！！
 
 ### 通过 python-litehtml实现的PyQt-Html-Widget
